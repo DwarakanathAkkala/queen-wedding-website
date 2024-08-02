@@ -1,2 +1,3 @@
-# queen-wedding-website
+# Responsive-wedding-website
+
 Responsive Wedding Website
