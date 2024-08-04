@@ -53,3 +53,137 @@ img {
     height: auto;
 }
 
+
+/* Header Section Start */
+header {
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--text-color);
+    padding: 1rem 1.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white-color);
+    font-family: var(--font-title);
+    font-size: var(--h1-font-size);
+    letter-spacing: 0.2rem;
+    z-index: 100;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.nav-menu li {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover, .active {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* Header Section End */
+
+
+/* Media Queries Start */
+
+@media (max-width: 860px) {
+    :root{
+        --big-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+    }
+
+    .nav {
+        width: 100%;
+        min-height: 50vh;
+        transform: translateY(-100%);
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: var(--text-color);
+        padding-top: var(--header-height);
+        z-index: 10;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .nav-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: var(--h3-font-size);
+    }
+
+    .nav-toggle {
+        display: block;
+        z-index: 100;
+    }
+
+    .nav-toggle i {
+        opacity: 0.5;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid var(--white-color);
+        font-size: var(--big-font-size);
+        color: var(--white-color);
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .nav-toggle i:hover {
+        border: 3px solid var(--white-color);
+    }
+
+    .show-menu {
+        transform: translateY(0);
+    }
+
+}
+
+/* Media Queries End */
