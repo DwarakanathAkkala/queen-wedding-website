@@ -28,3 +28,13 @@ function colorLink() {
     }
 }
 linkColor.forEach(l => l.addEventListener('click', colorLink));
+
+
+// Scroll to Top Button
+const up = document.querySelector('.up');
+window.addEventListener('scroll', () => {
+    up.classList.toggle('show', window.scrollY >= 560);
+    up.onclick = () => {
+        window.scrollTo({ behavior: "smooth", top: "0" })
+    }
+})
