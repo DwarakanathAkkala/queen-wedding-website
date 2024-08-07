@@ -472,6 +472,31 @@ header {
 
 /* Event Section End */
 
+/* Footer Section Start */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--header-height) 0;
+    width: 100%;
+    color: var(--white-color);
+    min-height: 30vh;
+    background-color: var(--text-color);
+}
+
+.footer-container .heart {
+    color: var(--white-color);
+}
+
+.footer-container .social-media i {
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    border-color: var(--white-color);
+}
+
+/* Footer Section End */
+
 
 /* Media Queries Start */
 
